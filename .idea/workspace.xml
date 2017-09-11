@@ -2,9 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790cd8cb-34c3-45c6-b0f7-413b0c99247b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/banner/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/banner/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/banner/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/blog/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/blog/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/blog/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/brand/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/brand/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/brand/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/brand/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/brand/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/brand/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cart/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cart/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cart/btn_remove.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cart/top-cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cart/top-cart2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/client/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/client/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/electronic/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/electronic/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/electronic/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/electronic/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/electronic/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/footer/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/footer/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/footer/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/footer/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/footer/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/footer/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon/email.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon/googleplus.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon/pinterest.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/1-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/1-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/menu-l/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/payment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/slider/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/slider/2.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/每日项目总结.xlsx" afterPath="$PROJECT_DIR$/每日项目总结.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/项目文档.xmind" afterPath="$PROJECT_DIR$/项目文档.xmind" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/common.css" afterPath="$PROJECT_DIR$/common/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,10 +84,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/common/css/common.css" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -29,7 +128,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="170" />
     <option name="y" value="119" />
     <option name="width" value="1346" />
@@ -83,6 +182,11 @@
             <path>
               <item name="Responsive" type="b2602c69:ProjectViewProjectNode" />
               <item name="Responsive" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Responsive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Responsive" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -99,6 +203,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\桌面\Responsive\img" />
       <recent name="D:\桌面\Responsive\common\js" />
       <recent name="D:\桌面\Responsive\font" />
       <recent name="D:\桌面\Responsive\common\css" />
@@ -194,15 +299,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505113382112</updated>
-      <workItem from="1505113398873" duration="3677000" />
+      <workItem from="1505113398873" duration="5419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3677000" />
+    <option name="totallyTimeSpent" value="5419000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -212,7 +318,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -239,14 +345,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -283,6 +381,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding />
         </state>
       </provider>
