@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- 导航顶部部分 -->
 .header-top-left {
 	margin-top: 4px;
@@ -394,8 +393,7 @@
   .header-area-4 .header-top-right ul li ul li a:hover {
 	color:#fff;
   }
-  
-=======
+
 /* 统一 */
 body{
     color: #666666;
@@ -407,7 +405,11 @@ body{
 }
 a{
     transition: all .3s ease 0s;
-    text-decoration: none;
+}
+input,button{
+    background: transparent;
+    border:none;
+    outline: none;
 }
 /* 统一结束 */
 
@@ -419,5 +421,24 @@ a{
 .below-banner .logo{
     width: 100%;
 }
+.below-banner .tag a{
+    display: inline-block;
+    margin-right: 6px;
+    width: 55px;
+    height: 55px;
+    line-height: 48px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out 0s;
+}
+.below-banner .tag a:hover{
+    background: #fff;
+    color: #444;
+}
+.below-banner .email{
+    
+}
 /* 页脚结束 */
->>>>>>> 9335889deb5cc72a498685cbba41114c2e3e743d
