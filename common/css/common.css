@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- 导航顶部部分 -->
 .header-top-left {
 	margin-top: 4px;
@@ -394,3 +395,29 @@
 	color:#fff;
   }
   
+=======
+/* 统一 */
+body{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #f7f7f7;
+    /*line-height: 20px;*/
+}
+a{
+    transition: all .3s ease 0s;
+    text-decoration: none;
+}
+/* 统一结束 */
+
+/* 页脚 */
+.below-banner{
+    padding:30px 0;
+    background: url(../../img/bg-1.jpg)no-repeat scroll center center / cover;
+}
+.below-banner .logo{
+    width: 100%;
+}
+/* 页脚结束 */
+>>>>>>> 9335889deb5cc72a498685cbba41114c2e3e743d
