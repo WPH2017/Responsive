@@ -690,3 +690,154 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 .nivo-controlNav a.active {
 	font-weight:bold;
 }
+
+
+/* 添加购物车 */
+.add-cart{
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+}
+.add-cart a{
+    color: #555;
+}
+.add-cart a:hover{
+    color: #F4A137;
+}
+.add-cart:before{
+    position: absolute;
+    content: "";
+    width: 62px;
+    height: 1px;
+    background: #cccccc;
+    top:-1px;
+    z-index: 10;
+}
+/* 添加购物车结束 */
+
+ /*“新”、“拍卖”、“特价”标签 */
+.new,.sale,.cheap{
+    position: absolute;
+    top: 10px;
+    min-width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: capitalize;
+    border-radius: 4px;
+    z-index: 99;
+    background: #fff;
+}
+.new{
+    background: #f00;
+}
+.sale{
+    background: orange;
+}
+.cheap{
+    background: #0f0;
+}
+.new::before,.sale::before,.cheap::before{
+    position: absolute;
+    left: 5px;
+    bottom: -7px;
+    content: "";
+    border:5px solid transparent;
+    border-top-color:#fff;
+}
+.new::before{
+    border-top-color: #f00;
+}
+.sale::before{
+    border-top-color: orange;
+}
+.cheap::before{
+    border-top-color: #0f0;
+}
+ /*“新”、“拍卖”、“特价”标签结束 */
+
+.big-goods .container{
+    border-top:3px solid #F4A137;
+}
+
+.big-goods .row>div{
+    margin: 0;
+    padding: 0;
+}
+.big-goods .row>div>div{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+.big-goods .tab-title h2{
+    padding-left: 70px;
+    background: #fff;
+}
+.big-goods .tab-title h2::before{
+    background: #f4a137 none repeat scroll 0 0;
+    color: #ffffff;
+    content: "\f017 ";
+    font-family: "FontAwesome";
+    height: 57px;
+    left: 0;
+    line-height: 57px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 57px;
+}
+/* 商品列表 */
+.seller .goods-box{
+    border-top:3px solid #F4A137;
+}
+aside .sell-title,.goods-list>div .sell-title{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top:10px;
+    line-height: 25px;
+}
+aside .single-goods{
+    position: relative;
+    background: #fff;
+    margin-bottom: 1px;
+}
+aside .single-goods::after{
+    content: "";
+    display: block;
+    clear: both ;
+}
+aside .single-goods .img-box{
+    float: left;
+    width: 40%;
+}
+aside .single-goods .single-content{
+    float:left;
+    width: 60%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+aside .spe-seller .single-goods .img-box{
+    width: 100%;
+}
+
+.goods-list>div .single-goods{
+    position: relative;
+    margin: 0;
+    border-right:1px solid transparent;
+    padding: 0;
+    background: #fff;
+}
+.goods-list>div .seller::after{
+    content: "";
+    display: block;
+    clear: both ;
+}
+.goods-list>div .single-goods .single-content{
+    padding: 10px;
+}
+.goods-list .goods-banner{
+    padding: 30px 0;
+}
+/* 商品列表结束 */
