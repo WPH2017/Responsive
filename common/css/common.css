@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 通用部分 */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800');
@@ -341,6 +342,9 @@ body {
 
 /* home-1 */
 
+=======
+<!-- 导航顶部部分 -->
+>>>>>>> 9d7d86b23f3362f8aafb0bc4b71cb901103e5930
 .header-top-left {
 	margin-top: 4px;
 }
@@ -823,6 +827,7 @@ strong.qty {
 
 .header-area-4 .header-top-right ul li a i {
 	color: #333;
+<<<<<<< HEAD
 }
 
 .header-area-4 .header-top-right ul li ul li a:hover {
@@ -2407,3 +2412,58 @@ textarea:focus {
 
 
 /* ------------------------------------------- */
+=======
+  }
+  .header-area-4 .header-top-right ul li ul li a:hover {
+	color:#fff;
+  }
+
+/* 统一 */
+body{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #f7f7f7;
+    /*line-height: 20px;*/
+}
+a{
+    transition: all .3s ease 0s;
+}
+input,button{
+    background: transparent;
+    border:none;
+    outline: none;
+}
+/* 统一结束 */
+
+/* 页脚 */
+.below-banner{
+    padding:30px 0;
+    background: url(../../img/bg-1.jpg)no-repeat scroll center center / cover;
+}
+.below-banner .logo{
+    width: 100%;
+}
+.below-banner .tag a{
+    display: inline-block;
+    margin-right: 6px;
+    width: 55px;
+    height: 55px;
+    line-height: 48px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out 0s;
+}
+.below-banner .tag a:hover{
+    background: #fff;
+    color: #444;
+}
+.below-banner .email{
+    
+}
+/* 页脚结束 */
+>>>>>>> 9d7d86b23f3362f8aafb0bc4b71cb901103e5930
