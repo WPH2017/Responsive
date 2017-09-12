@@ -176,12 +176,16 @@ body {
 	background: #F4A137 none repeat scroll 0 0;
 	border-radius: 50%;
 	bottom: 30px;
+	display: block;
+	position: fixed;
+	z-index: 2147483647; 
 	color: #ffffff;
 	height: 50px;
 	line-height: 52px;
-	right: 60px;
+	right: 70px;
 	text-align: center;
 	width: 50px;
+	display: none;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 

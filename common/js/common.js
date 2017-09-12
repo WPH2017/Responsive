@@ -44,5 +44,19 @@
         $(".product_vmegamenu").slideToggle(500);
     });
 
-
 })(jQuery);
+
+// 回到顶部
+$(window).scroll(function(){
+    var sc=$(window).scrollTop();
+    if(sc>0){
+     $("#scrollUp").css("display","block");
+    }else{
+    $("#scrollUp").css("display","none");
+    }
+  });
+
+  $("#scrollUp").click(function(){
+    var sc=$(window).scrollTop();
+    $('html').animate({scrollTop:0},500);
+  });
