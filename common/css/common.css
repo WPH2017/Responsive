@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 /* 通用部分 */
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800');
 html,
 body {
@@ -123,15 +121,15 @@ body {
 }
 
 .top-cart-title {
-	background: rgba(0, 0, 0, 0) url("img/cart/top-cart.png") no-repeat scroll 0 50%;
+	background: rgba(0, 0, 0, 0) url("../../img/cart/top-cart.png") no-repeat scroll 0 50%;
 }
 
 .top-cart-title-2 {
-	background: rgba(0, 0, 0, 0) url("img/cart/top-cart2.png") no-repeat scroll 0 50%;
+	background: rgba(0, 0, 0, 0) url("../../img/cart/top-cart2.png") no-repeat scroll 0 50%;
 }
 
 .btn-remove {
-	background: #404040 url("img/cart/btn_remove.png") no-repeat scroll 0 0;
+	background: #404040 url("../../img/cart/btn_remove.png") no-repeat scroll 0 0;
 	display: block;
 	font-size: 0;
 	height: 15px;
@@ -144,11 +142,11 @@ body {
 }
 
 .btn-remove:hover {
-	background: #F4A137 url("img/cart/btn_remove.png") no-repeat scroll 0 0;
+	background: #F4A137 url("../../img/cart/btn_remove.png") no-repeat scroll 0 0;
 }
 
 .newletter-area {
-	background: url(img/bg-1.jpg)no-repeat scroll center center / cover;
+	background: url(../../img/bg-1.jpg)no-repeat scroll center center / cover;
 }
 
 .subscribe-social a {
@@ -302,23 +300,23 @@ body {
 }
 
 .wishlist-share ul li a.facebook {
-	background: url("img/icon/facebook.png") no-repeat scroll 0 0;
+	background: url("../../img/icon/facebook.png") no-repeat scroll 0 0;
 }
 
 .wishlist-share ul li a.twitter {
-	background: url("img/icon/twitter.png") no-repeat scroll 0 0;
+	background: url("../../img/icon/twitter.png") no-repeat scroll 0 0;
 }
 
 .wishlist-share ul li a.pinterest {
-	background: url("img/icon/pinterest.jpg") no-repeat scroll 0 0;
+	background: url("../../img/icon/pinterest.jpg") no-repeat scroll 0 0;
 }
 
 .wishlist-share ul li a.googleplus {
-	background: url("img/icon/googleplus.jpg") no-repeat scroll 0 0;
+	background: url("../../img/icon/googleplus.jpg") no-repeat scroll 0 0;
 }
 
 .wishlist-share ul li a.email {
-	background: url("img/icon/email.jpg") no-repeat scroll 0 0;
+	background: url("../../img/icon/email.jpg") no-repeat scroll 0 0;
 }
 
 .wishlist-share ul li a {}
@@ -342,9 +340,6 @@ body {
 
 /* home-1 */
 
-=======
-<!-- 导航顶部部分 -->
->>>>>>> 9d7d86b23f3362f8aafb0bc4b71cb901103e5930
 .header-top-left {
 	margin-top: 4px;
 }
@@ -827,7 +822,6 @@ strong.qty {
 
 .header-area-4 .header-top-right ul li a i {
 	color: #333;
-<<<<<<< HEAD
 }
 
 .header-area-4 .header-top-right ul li ul li a:hover {
@@ -2412,8 +2406,6 @@ textarea:focus {
 
 
 /* ------------------------------------------- */
-=======
-  }
   .header-area-4 .header-top-right ul li ul li a:hover {
 	color:#fff;
   }
@@ -2625,4 +2617,3 @@ footer .carousel-client .carousel-box{
     padding-bottom: 30px;
 }
 /* 页脚结束 */
->>>>>>> 9d7d86b23f3362f8aafb0bc4b71cb901103e5930
