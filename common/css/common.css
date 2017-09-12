@@ -70,10 +70,10 @@ a {
 /* a标签字体 */
 
 
-/* a:hover {
+a:hover {
 	color: #F4A137;
 	text-decoration: none;
-} */
+}
 
 
 /* a:active,
@@ -2429,6 +2429,26 @@ input,button{
 }
 /* 统一结束 */
 
+/* 内容、页脚共用 */
+div.arrow{
+    float: right;
+}
+div.arrow button{
+    width: 25px;
+    height: 25px;
+    background: #dddddd;
+    border-radius: 20%;
+    color: #333333;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    transition: all .4s;
+}
+div.arrow button:hover{
+    color: #fff;
+    background: #f4a137;
+}
+/* 内容、页脚共用结束 */
 
 /* 页脚 */
 .carousel-client,.carousel-latest{
@@ -2441,24 +2461,6 @@ input,button{
     margin-bottom: 10px;
     padding-bottom: 5px;
     color: #444;
-}
-footer .arrow{
-    float: right;
-}
-footer .arrow button{
-    width: 25px;
-    height: 25px;
-    background: #dddddd;
-    border-radius: 20%;
-    color: #333333;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    transition: all .4s;
-}
-footer .arrow button:hover{
-    color: #fff;
-    background: #f4a137;
 }
 footer .carousel-client .carousel-box{
     border-top: 3px solid #f4a137;
@@ -2492,13 +2494,6 @@ footer .carousel-client .carousel-box{
 .carousel-latest .blog-content p{
     margin:10px 0;
 }
-/* 轮播1 */
-
-/* 轮播1结束 */
-
-/* 轮播2 */
-
-/* 轮播2结束 */
 
 .below-banner{
     padding:30px 0;
@@ -2527,6 +2522,8 @@ footer .carousel-client .carousel-box{
 }
 .below-banner .email input[type="button"] {
     margin-left:-83px;
+    width:auto;
+    font-size: 13px;
     padding: 0 26px;
 }
 .below-banner .tag{
