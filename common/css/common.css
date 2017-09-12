@@ -413,13 +413,109 @@ input,button{
 }
 /* 统一结束 */
 
+
 /* 页脚 */
+.carousel-client,.carousel-latest{
+    padding-bottom: 60px;
+}
+.carousel-client h3,.carousel-latest h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top:0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #444;
+}
+footer .arrow{
+    float: right;
+}
+footer .arrow button{
+    width: 25px;
+    height: 25px;
+    background: #dddddd;
+    border-radius: 20%;
+    color: #333333;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    transition: all .4s;
+}
+footer .arrow button:hover{
+    color: #fff;
+    background: #f4a137;
+}
+footer .carousel-client .carousel-box{
+    border-top: 3px solid #f4a137;
+}
+.carousel-client .carousel-box img{
+    float: left;
+    width: 190px;
+    border-right:2px solid transparent;
+}
+.carousel-latest li{
+    float: left;
+    margin-left:60px;
+}
+.carousel-latest li:first-of-type{
+    margin-left:0;
+}
+.carousel-latest .blog-content{
+    float: right;
+    padding: 10px;
+    width: 230px;
+    height: 110px;
+    background: #fff;
+}
+.carousel-latest .blog-content a h4{
+    color: #666;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .3s;
+}
+.carousel-latest .blog-content p{
+    margin:10px 0;
+}
+/* 轮播1 */
+
+/* 轮播1结束 */
+
+/* 轮播2 */
+
+/* 轮播2结束 */
+
 .below-banner{
     padding:30px 0;
     background: url(../../img/bg-1.jpg)no-repeat scroll center center / cover;
 }
 .below-banner .logo{
+    margin: 0;
+    line-height: 70px;
+    text-align: center;
+}
+.below-banner .email {
+    line-height: 70px;
+    white-space: nowrap;
+}
+.below-banner .email input {
+    height: 45px;
+    line-height: 45px;
+    border:1px solid #fff;
+    color: #fff;
+}
+.below-banner .email input[type="text"] {
     width: 100%;
+    padding-left: 16px;
+    padding-right:94px;
+    font-size: 14px;
+}
+.below-banner .email input[type="button"] {
+    margin-left:-83px;
+    padding: 0 26px;
+}
+.below-banner .tag{
+	text-align: center;
+    line-height: 70px;
 }
 .below-banner .tag a{
     display: inline-block;
@@ -438,7 +534,70 @@ input,button{
     background: #fff;
     color: #444;
 }
-.below-banner .email{
-    
+
+.links{
+    border-top: 3px solid #f4a137;
+    background: #333;
+}
+.links .row>div{
+    padding-top:30px;
+}
+.links h4{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
+.links .link-contact{
+    color: #fff;
+}
+.links .link-contact p{
+    line-height:24px;
+    margin-bottom:30px;
+}
+.links .link-contact p:last-of-type{
+    margin:0;
+}
+.links .link-contact i{
+    float: left;
+    height: 50px;
+    color: #FF9900;
+    font-size: 20px;
+    margin-right:20px;
+}
+.links li{
+    height: 25px;
+    line-height: 25px;
+}
+.links li::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-bottom:2px;
+    border-radius: 50%;
+    background-color: #f4a137;
+}
+.links li a{
+    padding-left: 15px;
+}
+.links .link-list{
+    padding-bottom: 30px;
+}
+.links .img-list{
+    width: 100%;
+}
+.links .img-list img{
+    float: left;
+    max-width: 86px;
+    margin:0 2px 2px 0;
+}
+.links .img-list img:nth-of-type(3n){
+    margin-right:0;
+}
+.links .copyright{
+    border-top: 1px solid #666;
+    padding-bottom: 30px;
 }
 /* 页脚结束 */
