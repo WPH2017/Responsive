@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="790cd8cb-34c3-45c6-b0f7-413b0c99247b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/common.css" afterPath="$PROJECT_DIR$/common/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="790cd8cb-34c3-45c6-b0f7-413b0c99247b" name="Default" comment="" />
     <ignored path="D:\桌面\Responsive\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +15,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="1408">
               <caret line="691" column="24" lean-forward="true" selection-start-line="691" selection-start-column="24" selection-end-line="713" selection-end-column="30" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -379,7 +374,7 @@
       <option name="presentableId" value="Default" />
       <updated>1505113382112</updated>
       <workItem from="1505113398873" duration="7223000" />
-      <workItem from="1505178105140" duration="20764000" />
+      <workItem from="1505178105140" duration="20935000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/WPH2017/Responsive&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1505128896013</created>
@@ -392,7 +387,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31000000" />
+    <option name="totallyTimeSpent" value="31171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1009,7 +1004,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="1408">
           <caret line="691" column="24" lean-forward="true" selection-start-line="691" selection-start-column="24" selection-end-line="713" selection-end-column="30" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
