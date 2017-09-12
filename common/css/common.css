@@ -1167,7 +1167,6 @@ textarea:focus {
 	background: #007da1;
 }
 
-
 /*************************
   Basic margin padding
 *************************/
@@ -1336,7 +1335,6 @@ textarea:focus {
 	margin-right: 150px
 }
 
-
 /*************************
       Margin bottom
 *************************/
@@ -1408,7 +1406,6 @@ textarea:focus {
 .mb-150 {
 	margin-bottom: 150px
 }
-
 
 /*************************
         Margin left
@@ -2438,6 +2435,17 @@ input,button{
     outline: none;
 }
 /* 统一结束 */
+
+.single-goods .img-box{
+    overflow: hidden;
+    transition: all .3s;
+}
+.single-goods .img-box img{
+    transition: all .3s;
+}
+.single-goods .img-box:hover img{
+    transform: scale(1.1);
+}
 
 /* 内容、页脚共用 */
 div.arrow{

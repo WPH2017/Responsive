@@ -690,6 +690,15 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 .nivo-controlNav a.active {
 	font-weight:bold;
 }
+.single-goods .goo
+
+.single-goods img:hover{
+    animation:goods-scale 1s linear;
+}
+@keyframes goods-scale {
+    0%{ transform: scale(2)}
+    100%{transform: scale(1)}
+}
 
 
 /* 添加购物车 */
@@ -758,6 +767,9 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 }
  /*“新”、“拍卖”、“特价”标签结束 */
 
+.big-goods{
+    margin-top:30px;
+}
 .big-goods .container{
     border-top:3px solid #F4A137;
 }
@@ -765,28 +777,60 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 .big-goods .row>div{
     margin: 0;
     padding: 0;
+    background: #fff;
 }
 .big-goods .row>div>div{
     margin: 0;
     padding: 0;
-    background: #fff;
 }
-.big-goods .tab-title h2{
+.big-goods .tab-title-change h2{
+    margin: 0;
+    margin-bottom: 1px;
     padding-left: 70px;
+    font-size:40px;
+    height: 57px;
+    left: 60px;
     background: #fff;
 }
-.big-goods .tab-title h2::before{
-    background: #f4a137 none repeat scroll 0 0;
+.big-goods .tab-title-change h2::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 57px;
+    width: 57px;
+    text-align: center;
+    line-height: 57px;
+    font-size: 40px;
     color: #ffffff;
     content: "\f017 ";
     font-family: "FontAwesome";
+    background: #f4a137;
+}
+.big-goods .tab-change{
     height: 57px;
-    left: 0;
-    line-height: 57px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 57px;
+}
+.big-goods .nav-tabs{
+    height: 100%;
+    border:none;
+}
+.big-goods .nav-tabs>li{
+    height: 100%;
+}
+.big-goods .nav-tabs>li>a{
+    height: 100%;
+    line-height: 38px;
+    border:none;
+}
+.big-goods .nav-tabs>li>a:hover{
+    color: #fff;
+    border:none;
+    border-radius: 0;
+    background: #F4A137;
+}
+.big-goods .nav-tabs img{
+    float: left;
+    height: 42px;
+    width: 42px;
 }
 /* 商品列表 */
 .seller .goods-box{
