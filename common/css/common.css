@@ -179,7 +179,7 @@ body {
 	color: #ffffff;
 	height: 50px;
 	line-height: 52px;
-	right: 30px;
+	right: 60px;
 	text-align: center;
 	width: 50px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -205,12 +205,12 @@ body {
 }
 
 
-/* social_block */
+/* 侧边栏导航*/
 
 #social_block {
 	position: fixed;
 	right: 0;
-	top: 15%;
+	top: 20%;
 	transform: translateX(140px);
 	width: 190px;
 	z-index: 10050000;
@@ -298,10 +298,14 @@ body {
 #social_block ul .pinterest a::before {
 	content: "";
 }
+#social_block ul .cart a {
+	background: rgba(255, 0, 0, 0.87) none repeat scroll 0 0;
+}
 
 .wishlist-share ul li a.facebook {
 	background: url("../../img/icon/facebook.png") no-repeat scroll 0 0;
 }
+
 
 .wishlist-share ul li a.twitter {
 	background: url("../../img/icon/twitter.png") no-repeat scroll 0 0;
@@ -311,6 +315,12 @@ body {
 	background: url("../../img/icon/pinterest.jpg") no-repeat scroll 0 0;
 }
 
+.wishlist-share ul li a.cart {
+	background: url("../../img/icon/gouwuche.png") no-repeat scroll 0 0;
+}
+
+
+
 .wishlist-share ul li a.googleplus {
 	background: url("../../img/icon/googleplus.jpg") no-repeat scroll 0 0;
 }
@@ -319,9 +329,9 @@ body {
 	background: url("../../img/icon/email.jpg") no-repeat scroll 0 0;
 }
 
-.wishlist-share ul li a {}
+/* .wishlist-share ul li a {}
 
-.wishlist-share ul li a {}
+.wishlist-share ul li a {} */
 
 .wishlist-share ul li a:hover {
 	background-position: left bottom;
