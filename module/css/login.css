@@ -1,0 +1,178 @@
+.login{
+    margin-top:30px;
+}
+.login .change-box{
+    height: 680px;
+    overflow: hidden;
+}
+.login .change-box .login-box,.login .change-box .register-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.login .login-box{
+    margin-top:100px;
+    padding: 10px;
+}
+.login .login-box h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    text-shadow: 0 0 1px #aaa;
+    color: #f4a137;
+    animation: textchange 1s linear infinite alternate;
+}
+@keyframes textchange {
+    from{
+        text-shadow:0 0 1px white;
+    }
+    to{
+        text-shadow:0 0 1px #aaa;
+    }
+}
+
+
+.login input{
+    width:auto;
+    margin: 0;
+    padding: 0;
+    height:auto;
+}
+.login #username,#password{
+    width: 100%;
+    height:50px;
+    padding-left:30px;
+    font-size: 18px;
+    line-height: 50px;
+    outline: none;
+    color: #666;
+    border-radius: 10px;
+    background-color: #eee;
+    transition: all .5s;
+}
+.login input::placeholder{
+    color: #ccc;
+    font-weight:bold;
+    font-size:15px;
+}
+.login input:focus::placeholder{
+    color: transparent;
+}
+.login .p-login{
+    text-align: center;
+}
+.login #login{
+    outline: none;
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    border: 0;
+    background: #f4a137;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 9px;
+    margin-bottom: 30px;
+}
+.login .small{
+    margin-top: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight:normal;
+}
+.login .small input{
+    background: #fff;
+    border:none;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+}
+.login .forget{
+    /*position: absolute;*/
+    font-size:13px;
+    font-weight:normal;
+    text-align: center;
+}
+.login .tip{
+    height: 16px;
+    font-size: 13px;
+}
+.login .link{
+    text-align: center;
+}
+.login .link a{
+    font-size:20px;
+    margin-left:14px;
+    width: 24px;
+    height: 22px;
+}
+
+.login .register-box{
+    display: none;
+    margin-top:100px;
+    padding: 10px;
+}
+
+.login .register-box h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    text-shadow: 0 0 1px #aaa;
+    color: #f4a137;
+    animation: textchange1 1s linear infinite alternate;
+}
+@keyframes textchange1 {
+    from{
+        text-shadow:0 0 1px white;
+    }
+    to{
+        text-shadow:0 0 1px #aaa;
+    }
+}
+.login #reg-username,#reg-password,#reg-repassword{
+    width: 100%;
+    height:50px;
+    padding-left:30px;
+    font-size: 18px;
+    line-height: 50px;
+    outline: none;
+    color: #666;
+    border-radius: 10px;
+    background-color: #eee;
+    transition: all .5s;
+}
+.login .p-reg{
+    text-align: center;
+}
+.login #register{
+    outline: none;
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    border: 0;
+    background: #f4a137;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 9px;
+    margin-bottom: 30px;
+}
+.login .reg-link{
+    text-align: center;
+}
+.login .reg-link a{
+    font-size:20px;
+    margin-left:14px;
+    width: 24px;
+    height: 22px;
+}
+.login .back-login{
+    font-size:13px;
+    font-weight:normal;
+    text-align: center;
+}
