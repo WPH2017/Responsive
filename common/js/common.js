@@ -61,8 +61,10 @@ $("#scrollUp").click(function(){
     //TODO:浏览器检测，body或者html
     var user=navigator.userAgent;
     if(/Chrome/.test(user)){
+        $('body').animate({scrollTop:0},500);
         $('html').animate({scrollTop:0},500);
     }else if(/Firefox/.test(user)){
+        $('body').animate({scrollTop:0},500);
         $('html').animate({scrollTop:0},500);
     }
 });
