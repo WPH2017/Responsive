@@ -56,7 +56,12 @@ $(window).scroll(function(){
     }
   });
 
-  $("#scrollUp").click(function(){
-    var sc=$(window).scrollTop();
-    $('html').animate({scrollTop:0},500);
-  });
+$("#scrollUp").click(function(){
+    // var sc=$(window).scrollTop();
+    if(chrome){
+        $('body').animate({scrollTop:0},500);
+    }
+    if(Firefox){
+        $('html').animate({scrollTop:0},500);
+    }
+});

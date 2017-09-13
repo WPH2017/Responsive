@@ -1,0 +1,60 @@
+
+
+#shop-nav{
+    overflow: hidden;
+}
+#shop-nav li{
+    /*display: block;*/
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #cccccc;
+    margin-right: 10px;
+}
+#shop-section{
+    width: 1410px;
+    position: relative;
+    left: 5%;
+    top: 5%;
+}
+#shop-section .goodsUl{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+    background: WHITE;
+}
+#shop-section .goodsUl li {
+    display: block;
+    width: 200px;
+    height: 500px;
+    background: #3c3c3c;
+    float: left;
+    margin-left: 45px;
+    margin-top: 40px;
+    text-align: center;
+}
+#shop-section .goodsUl li img{
+    width: 200px;
+}
+.price{
+    background: deeppink;
+    font-size: 16px;
+    color: #f0f0f0;
+}
+#shop-nav {
+    overflow: hidden;
+    position: relative;
+    left: 15%;
+}
+footer{
+    position: relative;
+    top: 15%;
+}
+#shop-section p{
+    line-height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
