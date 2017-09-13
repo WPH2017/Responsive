@@ -68,3 +68,48 @@ $("#scrollUp").click(function(){
         $('html').animate({scrollTop:0},500);
     }
 });
+
+// 搜索
+(function ($) {
+    var word=$('header .search-box form input');
+
+    word.keypress(function (event) {
+        if(event.keyCode===13){
+            search();
+        }
+    });
+
+    $('header .search-box form button').click(search);
+    
+//    搜索业务函数
+    function search() {
+        if(!word.val()){
+            alert("请输入内容");
+            return;
+        }
+        var encodeWrd=encodeURIComponent(word.val());
+        //TODO：延迟
+        setTimeout(function () {
+            location.href='./search_result.html?wrd='+encodeWrd;
+        },1);
+    }
+})(jQuery);
+
+//将类别和id对应表存入本地
+(function ($) {
+    if(localStorage.getItem('classList')) return;
+    var classList={};//保存字典
+    $.ajax({
+        "url":"http://h6.duchengjiu.top/shop/api_cat.php",
+        "type":"GET",
+        "success":function (json) {
+            $(json.data).each(function () {
+                var name=$(this)[0].cat_name;
+                var tid=$(this)[0].cat_id;
+                //将类别名称存入类别id中
+                classList[$(this)[0].cat_id]=$(this)[0].cat_name;
+                localStorage.setItem('classList',JSON.stringify(classList));
+            });
+        }
+    });
+})(jQuery);

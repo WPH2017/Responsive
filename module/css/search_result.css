@@ -1,0 +1,24 @@
+
+.result{
+    margin-top:60px;
+    margin-bottom: 60px;
+}
+
+.result-box{
+    text-align: center;
+}
+.result-container div.result-box:nth-child(5n){
+}
+.result-box img{
+    width: 180px;
+    height: 180px;
+}
+.result-box p{
+    margin: 0;
+    padding: 0 20px;
+    height:20px;
+    font-size:14px;
+    line-height:20px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}

@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./common/css/cssreset-min.css">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./module/css/search_result.css">
+</head>
+<body>
+<!-- 页眉 -->
+<header>
+    <!-- 导航顶部部分 -->
+    <div class="header-top-area black-bg ptb-7 hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="header-top-left">
+                        <span><a href="#">联系我们:</a>(+1)866-550-3669</span>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-8">
+                    <div class="header-top-right">
+                        <ul>
+                            <li class="slide-toggle"><a href="#"><i class="fa fa-user"></i> My Account</a>
+                                <ul class="show-toggle" style="display: none;">
+                                    <li><a href="#">注册</a></li>
+                                    <li><a href="#">登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
+                        </ul>
+                        <ul>
+                            <li class="slide-toggle-2 text-uppercase"><a href="#"><i class="fa fa-usd"></i>USD</a>
+                                <ul class="show-toggle-2" style="display: none;">
+                                    <li><a href="#"><i class="fa fa-eur"></i> EUR</a></li>
+                                    <li><a href="#"><i class="fa fa-gbp"></i> GBP</a></li>
+                                    <li><a href="#"><i class="fa fa-usd"></i> USD</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="slide-toggle-3 text-uppercase"><a href="#">fr-ca</a>
+                                <ul class="show-toggle-3" style="display: none;">
+                                    <li><a href="#">en-gb</a></li>
+                                    <li><a href="#">fr-ca</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航底部部分 -->
+    <div class="header-bottom-area bg-color-1 ptb-25">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <div class="header-bottom-middle">
+                        <div class="top-search">
+                            <span class="tex_top_skype"><i class="fa fa-skype"></i>Skype: <span class="">Support.skype</span></span>
+                            <span class="tex_top_email"><i class="fa fa-envelope"></i>Email: <span class="">demo@towerthemes.com</span></span>
+                        </div>
+                        <div class="search-box">
+                            <form action="#">
+                                <select name="#" id="select">
+                                    <option value="">All categories</option>
+                                    <option value="40">Accessories</option>
+                                    <option value="41">Clothing</option>
+                                    <option value="42">-Hoodies</option>
+                                    <option value="47">-T-shirts</option>
+                                    <option value="43">Men's</option>
+                                    <option value="50"> -Hats</option>
+                                    <option value="44">Music</option>
+                                    <option value="46">-Singles</option>
+                                    <option value="49">-Albums</option>
+                                    <option value="45">Posters</option>
+                                    <option value="48">Women's</option>
+                                    <option value="51">-Hats</option>
+                                    <option value="52">----Shoes</option>
+                                    <option value="53">----Scarves</option>
+                                    <option value="54">Jewellery</option>
+                                    <option value="55">---Rings</option>
+                                    <option value="56">----Gold Ring</option>
+                                    <option value="57">----platinum ring</option>
+                                    <option value="58">----Silver Ring</option>
+                                    <option value="59">----Diamond rings</option>
+                                    <option value="60">---Necklaces</option>
+                                    <option value="61">----Diamond necklaces</option>
+                                    <option value="62">----Pearl necklaces</option>
+                                    <option value="63">----Silver necklaces</option>
+                                    <option value="64">----Statement necklaces</option>
+                                    <option value="65">Equipments</option>
+                                    <option value="73">---Accessories</option>
+                                    <option value="78">----headphone</option>
+                                    <option value="79">----health</option>
+                                    <option value="80">----camera</option>
+                                    <option value="74">---beauty</option>
+                                    <option value="75">----run</option>
+                                    <option value="76">----evening</option>
+                                    <option value="77">----coats</option>
+                                    <option value="66">Watches</option>
+                                    <option value="67">Books</option>
+                                    <option value="68">Sports</option>
+                                    <option value="69">Gifts</option>
+                                </select>
+                                <input placeholder="Search..." type="text">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-bottom-right">
+                        <div class="left-cart">
+                            <div class="header-compire">
+                                <a href="#"><i class="fa fa-heart"></i> Wish List 0 </a>
+                                <a href="#"><i class="fa fa-refresh"></i> Compare  0 </a>
+                            </div>
+                        </div>
+                        <div class="shop-cart-area">
+                            <div class="top-cart-wrapper">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 横向灰色导航条部分 -->
+    <div class="mainmenu-area bg-color-2 hidden-xs hidden-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="mainmenu-left visible-lg  visible-md">
+                        <div class="product-menu-title">
+                            <h2>All categories <i class="fa fa-arrow-circle-down"></i></h2>
+                        </div>
+                        <div class="product_vmegamenu">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/1.png" alt=""> Automotive &amp; Motorcycle</a></li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/2.png" alt="">Bags, Shoes &amp; Accessories</a></li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/3.png" alt=""> Cameras &amp; Photo</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/4.png" alt=""> Computers &amp; Networking</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/5.png" alt="">Flashlights &amp; Lamps</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-icon"><img src="img/menu-l/6.png" alt="">Laptops &amp; Accessories</a>
+                                    <div class="vmegamenu">
+											<span>
+										<a href="#" class="vgema-title">Linux</a>
+										<a href="#">Edubuntu</a>
+										<a href="#">Kubuntu</a>
+										<a href="#">Lubuntu</a>
+										</span>
+                                        <span>
+											<a href="#" class="vgema-title">Mac </a>
+											<a href="#">Mac OS X 10.0</a>
+											<a href="#">Mac OS X 10.7</a>
+											<a href="#">OS X 10.11</a>
+										</span>
+                                        <span>
+										<a href="#" class="vgema-title">Ubuntu</a>
+										<a href="#">Ubuntu Server</a>
+										<a href="#">Ubuntu Studio</a>
+										<a href="#">Ubuntu TV</a>
+									</span>
+                                        <span>
+										<a href="#" class="vgema-title">Windows</a>
+										<a href="#">Windows 10</a>
+										<a href="#">Windows 7</a>
+										<a href="#">Windows 8.1</a>
+									</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-icon"><img src="img/menu-l/12.png" alt="">Sports &amp; Outdoors</a>
+                                    <div class="vmegamenu">
+											<span>
+										<a href="#" class="vgema-title">Electronic</a>
+										<a href="#">Bedroom</a>
+										<a href="#">Kitchen</a>
+										<a href="#">Living room</a>
+										<a href="#">Out door</a>
+									</span>
+                                        <span>
+										<a href="#" class="vgema-title">Lights</a>
+										<a href="#">All lights</a>
+										<a href="#">Bed room</a>
+										<a href="#">Living room</a>
+										<a href="#">Out door</a>
+									</span>
+                                        <span>
+										<a href="#" class="vgema-title">Television</a>
+										<a href="#">Samsung</a>
+										<a href="#">Samsung Oled</a>
+										<a href="#">Sony</a>
+										<a href="#">Sony Bravia</a>
+									</span>
+                                        <span>
+										<a href="#" class="vgema-title">Washing</a>
+										<a href="#">Commercial</a>
+										<a href="#">Front-Load </a>
+										<a href="#">Pedestal </a>
+										<a href="#">Top-Load </a>
+									</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-icon"><img src="img/menu-l/7.png" alt="">Smartphone &amp; Tablets</a>
+                                    <div class="vmegamenu vmegamenu2">
+											<span>
+										<a href="#" class="vgema-title">HandBags</a>
+										<a href="#">Kids</a>
+										<a href="#">Mens</a>
+										<a href="#">Student</a>
+										<a href="#">Women</a>
+									</span>
+                                        <span>
+										<a href="#" class="vgema-title">Clothing</a>
+										<a href="#">Children</a>
+										<a href="#">Kids</a>
+										<a href="#">Mens</a>
+										<a href="#">Womens</a>
+									</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/8.png" alt="">Health &amp; Beauty</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/9.png" alt="">Toys &amp; Hobbies</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/10.png" alt="">Holiday Supplies &amp; Gifts</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/11.png" alt="">Jewelry &amp; Watches</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/5.png" alt="">Smartphone &amp; Watches</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/menu-l/4.png" alt="">Health Watches</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <div class="mainmenu">
+                        <nav>
+                            <ul>
+                                <li><a href="./index.html">主页</a></li>
+                                <li><a href="./about.html">关于</a></li>
+                                <li><a href="./shop.html">商品</a></li>
+                                <li><a href="./cart.html">购物车</a></li>
+                                <li><a href="./login.html">登录</a></li>
+                                <li><a href="./order.html">我的账户</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- 侧边栏部分 -->
+<div id="social_block">
+    <ul>
+        <li class="cart"><a class="fa fa-cart-arrow-down" href="#">cart</a></li>
+        <li class="facebook"><a href="#">Facebook</a></li>
+        <li class="twitter"><a href="#">twitter</a></li>
+        <li class="rss"><a href="#">rss</a></li>
+        <li class="youtube"><a href="#">youtube</a></li>
+        <li class="google-plus"><a href="#">google plus</a></li>
+        <li class="pinterest"><a href="#">pinterest</a></li>
+    </ul>
+</div>
+<!-- 页眉结束 -->
+
+
+<!-- 搜索结果 -->
+<section class="result">
+    <div class="container">
+        <h1></h1>
+        <div class="row">
+        </div>
+    </div>
+</section>
+<!-- 搜索结果结束 -->
+
+<!-- 页脚 -->
+<footer>
+    <section class="carousel-client">
+        <div class="container">
+            <h3>
+                加盟品牌和商家
+                <div class="arrow">
+                    <button class="fa fa-angle-left"></button>
+                    <button class="fa fa-angle-right"></button>
+                </div>
+            </h3>
+            <div class="carousel-box">
+                <img src="./img/brand/1.jpg" alt="">
+                <img src="./img/brand/2.jpg" alt="">
+                <img src="./img/brand/3.jpg" alt="">
+                <img src="./img/brand/4.jpg" alt="">
+                <img src="./img/brand/5.jpg" alt="">
+                <img src="./img/brand/6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="carousel-latest">
+        <div class="container">
+            <h3>
+                最新blog
+                <div class="arrow">
+                    <button class="fa fa-angle-left"></button>
+                    <button class="fa fa-angle-right"></button>
+                </div>
+            </h3>
+            <div class="carousel-box">
+                <ul>
+                    <li>
+                        <img src="./img/blog/1.jpg" alt="">
+                        <div class="blog-content">
+                            <a href="#"><h4>LATIN PROFESSOR</h4></a>
+                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl..</p>
+                            <a href="#">Read More <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/blog/1.jpg" alt="">
+                        <div class="blog-content">
+                            <a href="#"><h4>LATIN PROFESSOR</h4></a>
+                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl..</p>
+                            <a href="#">Read More <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/blog/1.jpg" alt="">
+                        <div class="blog-content">
+                            <a href="#"><h4>LATIN PROFESSOR</h4></a>
+                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl..</p>
+                            <a href="#">Read More <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="below-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="col-lg-5 col-md-6 email">
+                    <input type="text" placeholder="请输入电子邮箱...">
+                    <input type="button" value="提交"></input>
+                </div>
+                <div class="col-lg-4 col-md-6 tag">
+                    <a href="#"><i class="fa fa-weibo"></i></a>
+                    <a href="#"><i class="fa fa-weixin"></i></a>
+                    <a href="#"><i class="fa fa-renren"></i></a>
+                    <a href="#"><i class="fa fa-tencent-weibo"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="links">
+        <div class="container">
+            <div class="row link-list">
+                <div class="col-lg-3 col-md-6 col-sm-12 link-contact">
+                    <h4>反馈</h4>
+                    <i class="fa fa-home"></i><p>浙江省杭州市江干区下沙街道学源街文创大厦905室</p>
+                    <i class="fa fa-envelope-o"></i><p>wph2011wph@126.com</p>
+                    <i class="fa fa-phone"></i><p>(+86)15267053970</p>
+                </div>
+                <div class="col-lg-3 col-xs-6 col-sm-12">
+                    <h4>导航</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-6 col-sm-12">
+                    <h4>我的账户</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-6 col-sm-12">
+                    <h4>画廊</h4>
+                    <div class="img-list">
+                        <img src="./img/footer/1.jpg" alt="">
+                        <img src="./img/footer/2.jpg" alt="">
+                        <img src="./img/footer/3.jpg" alt="">
+                        <img src="./img/footer/4.jpg" alt="">
+                        <img src="./img/footer/5.jpg" alt="">
+                        <img src="./img/footer/6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-lg-6 col-xs-6 col-sm-12">
+                    <p>Copyright © 2017.Company name All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 col-xs-6 col-sm-12">
+                    <p><img src="./img/payment.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!-- 页脚结束 -->
+
+<!-- 回到顶部 -->
+<a id="scrollUp" href="javascript:"><i class="fa fa-angle-up"></i></a>
+
+<!-- 脚本开始 -->
+<script src="./common/js/jquery-1.12.3.min.js"></script>
+<script src="./common/js/bootstrap.min.js"></script>
+<script src="./common/js/common.js"></script>
+<script src="./module/js/search_result.js"></script>
+<!-- 脚本结束 -->
+</body>
+</html>
