@@ -208,7 +208,10 @@ body {
 	overflow: hidden;
 }
 
-
+/*折叠*/
+.mainmenu-left.visible-lg.visible-md .product_vmegamenu{
+	display: none;
+}
 /* 侧边栏导航*/
 
 #social_block {
