@@ -38,7 +38,8 @@
     font-weight: 900;
 }
 .d-goods .detail-content h4>small{
-    color: #f33;
+    color: #f58787;
+    font-weight:bold;
 }
 .d-goods .detail-content p{
     margin:21px 0;
@@ -47,24 +48,24 @@
     display: inline-block;
     width: 70px;
 }
-.d-goods .detail-content p:nth-of-type(1) em{
+.d-goods .detail-content p:nth-of-type(2) em{
     font-size:26px;
     font-weight:900;
 }
-.d-goods .detail-content p:nth-of-type(3) input[type="text"]{
+.d-goods .detail-content p:nth-of-type(4) input[type="text"]{
     width: 40px;
     height: 30px;
     padding:0;
     text-align: center;
     border: 1px solid #ccc;
 }
-.d-goods .detail-content p:nth-of-type(3) button{
+.d-goods .detail-content p:nth-of-type(4) button{
     width: 40px;
     height: 30px;
     box-shadow: 0 0 2px 1px #eee;
     transition: all .3s;
 }
-.d-goods .detail-content p:nth-of-type(3) button:hover{
+.d-goods .detail-content p:nth-of-type(4) button:hover{
     background: #f4a137;
     color: #fff;
 }
@@ -91,13 +92,13 @@
 .d-goods button#add-to-cart:hover{
     box-shadow: 0 1px 1px 1px #ccc;
 }
-.d-goods .detail-content p:nth-of-type(5) a i{
+.d-goods .detail-content p:nth-of-type(6) a i{
     color: #666;
     font-size:18px;
     margin-right:10px;
     transition: all .3s;
 }
-.d-goods .detail-content p:nth-of-type(5) a:hover i{
+.d-goods .detail-content p:nth-of-type(6) a:hover i{
     color: #f4a137;
 }
 

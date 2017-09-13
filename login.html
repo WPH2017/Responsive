@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>登录&注册</title>
     <link rel="stylesheet" href="./common/css/bootstrap.min.css">
     <link rel="stylesheet" href="./common/css/font-awesome.min.css">
     <link rel="stylesheet" href="./common/css/cssreset-min.css">
     <link rel="stylesheet" href="./common/css/common.css">
-    <link rel="stylesheet" href="./module/css/index.css">
+    <link rel="stylesheet" href="./module/css/login.css">
 </head>
 <body>
 <!-- 页眉 -->
@@ -269,12 +269,12 @@
                     <div class="mainmenu">
                         <nav>
                             <ul>
-                                <li><a href="index.html">主页</a></li>
-                                <li><a href="about.html">关于</a></li>
-                                <li><a href="shop.html">商品</a></li>
-                                <li><a href="cart.html">购物车</a></li>
-                                <li><a href="login.html">登录</a></li>
-                                <li><a href="account.html">我的账户</a></li>
+                                <li><a href="./index.html">主页</a></li>
+                                <li><a href="./about.html">关于</a></li>
+                                <li><a href="./shop.html">商品</a></li>
+                                <li><a href="./cart.html">购物车</a></li>
+                                <li><a href="./login.html">登录</a></li>
+                                <li><a href="./order.html">我的账户</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -283,9 +283,28 @@
         </div>
     </div>
 </header>
+<!-- 侧边栏部分 -->
+<div id="social_block">
+    <ul>
+        <li class="cart"><a class="fa fa-cart-arrow-down" href="#">cart</a></li>
+        <li class="facebook"><a href="#">Facebook</a></li>
+        <li class="twitter"><a href="#">twitter</a></li>
+        <li class="rss"><a href="#">rss</a></li>
+        <li class="youtube"><a href="#">youtube</a></li>
+        <li class="google-plus"><a href="#">google plus</a></li>
+        <li class="pinterest"><a href="#">pinterest</a></li>
+    </ul>
+</div>
 <!-- 页眉结束 -->
 
-<!---->
+<section class="login">
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+</section>
+<section class="register"></section>
 
 <!-- 页脚 -->
 <footer>
@@ -423,13 +442,13 @@
 <!-- 页脚结束 -->
 
 <!-- 回到顶部 -->
-<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"><i class="fa fa-angle-up"></i></a>
+<a id="scrollUp" href="javascript:"><i class="fa fa-angle-up"></i></a>
 
 <!-- 脚本开始 -->
 <script src="./common/js/jquery-1.12.3.min.js"></script>
 <script src="./common/js/bootstrap.min.js"></script>
 <script src="./common/js/common.js"></script>
-<script src="./common/js/jquery.scrollup.min.js"></script>
+<script src="./module/js/login.js"></script>
 <!-- 脚本结束 -->
 </body>
 </html>

@@ -58,6 +58,7 @@ $(window).scroll(function(){
 
 $("#scrollUp").click(function(){
     // var sc=$(window).scrollTop();
+    //TODO:浏览器检测
     if(chrome){
         $('body').animate({scrollTop:0},500);
     }
