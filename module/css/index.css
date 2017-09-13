@@ -11,9 +11,6 @@
     width: 100%;
     z-index: 8;
 }
-.product_vmegamenu{
-    display:block;!important;
-}
 .slider-progress {
     animation: 5000ms ease-in-out 0s normal none 1 running myfirst;
     background-color: rgba(255, 255, 255, 0.7);

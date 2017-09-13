@@ -1,0 +1,1 @@
+$(".product-menu-title").click();

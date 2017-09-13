@@ -43,7 +43,7 @@
     $(".product-menu-title").on("click", function () {
         $(".product_vmegamenu").slideToggle(500);
     });
-
+    
 })(jQuery);
 
 // 回到顶部
@@ -58,11 +58,11 @@ $(window).scroll(function(){
 
 $("#scrollUp").click(function(){
     // var sc=$(window).scrollTop();
-    //TODO:浏览器检测
-    if(chrome){
-        $('body').animate({scrollTop:0},500);
-    }
-    if(Firefox){
+    //TODO:浏览器检测，body或者html
+    var user=navigator.userAgent;
+    if(/Chrome/.test(user)){
+        $('html').animate({scrollTop:0},500);
+    }else if(/Firefox/.test(user)){
         $('html').animate({scrollTop:0},500);
     }
 });
