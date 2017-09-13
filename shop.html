@@ -289,7 +289,7 @@
 </header>
 <!-- 页眉结束 -->
 
-<!--&lt;!&ndash;内容部分商品展示&ndash;&gt;-->
+<!-- 内容部分商品展示 -->
 <ul
         id="shop-nav">
 
@@ -310,11 +310,31 @@
         <!--</div>-->
     </div>
 </div>
+<!-- 内容部分商品展示结束 -->
 
-
-
-
-
+<!-- 分页 -->
+<div class="container">
+    
+<nav aria-label="Page navigation">
+    <ul class="pagination page-ul">
+      <li>
+        <a href="javascript:" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li><a class="mdda" href="javascript:">1</a></li>
+      <li><a class="mdda" href="javascript:">2</a></li>
+      <li><a class="mdda"href="javascript:">3</a></li>
+      <li><a class="mdda"href="javascript:">4</a></li>
+      <li><a class="mdda"href="javascript:">5</a></li>
+      <li>
+        <a href="javascript:" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
 <!-- 侧边栏部分 -->
 <div id="social_block">
     <ul>
@@ -471,109 +491,8 @@
 <script src="./common/js/jquery-1.12.3.min.js"></script>
 <script src="./common/js/bootstrap.min.js"></script>
 <script src="./common/js/common.js"></script>
+<script src="./module/js/shop.js"></script>
 
-<script>
-
-
-    //页面导航；分类列表功能
-    $.get("http://h6.duchengjiu.top/shop/api_cat.php",function(data){
-        var obj = data;
-//					console.log(obj);
-
-        for(var i=0;i<obj.data.length;i++){
-
-            $("#shop-nav").append('<li><a href="shop.html?cat_id=' +obj.data[i].cat_id+ '">' + obj.data[i].cat_name +  '</a></li>');
-        }
-
-    });
-    //通过location.search获取get传参的数据 截取？后面的内容
-    var str = location.search.substr(1);
-    //用分割方法得到 = 号两边内容
-    var catId = str.split("=")
-    //用下标找到id的值
-
-    $.ajax({
-        "url": "http://h6.duchengjiu.top/shop/api_goods.php",
-        "type": "GET",
-        "data": {
-            "cat_id": catId[1]
-        },
-        "dataType": "json",
-        "success": function(response){
-//            console.log(response);
-            var obj = response.data;
-            for(var i=0;i<obj.length;i++){
-                var data=obj[i];
-                var html=`
-                    <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="${data.goods_thumb}" alt="...">
-                <div class="caption">
-                    <a href="detail.html"><h5>商品名称:${data.goods_name}</h5></a>
-                    <h6>商品详情:${data.goods_desc}</h6>
-                    <p>价格:${data.price}</p>
-                    <p><a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
-                </div>
-            </div>
-        </div>
-                `;
-
-                $("#goodsList").append(html);
-            }
-        }
-    });
-//    $.get("http://h6.duchengjiu.top/shop/api_cat.php",function(response){
-//
-//        if(response.code === 0){
-////		console.log(response);
-//            var html='';
-//            for(var i=0;i<response.data.length;i++){
-//                var obj = response.data[i];
-//
-//                html += `<li><a
-//href="shop.html?cat_id=${obj.cat_id}">${ obj.cat_name }</a></li>`;
-//            }
-//            $("#listNav").html(html);
-//        }
-//    });
-//    //		热门商品
-//    $.get("http://h6.duchengjiu.top/shop/api_goods.php",function(response){
-//        if(response.code === 0){
-////				console.log(response);
-//            var html='';
-//            for(var i=0;i<response.data.length;i++){
-//                var obj = response.data[i];
-//                html+=`<div class="col-sm-6 col-md-4">
-//						    <div class="thumbnail">
-//						      <img src="${obj.goods_thumb}" alt="...">
-//						      <div class="caption">
-//						        <h5><a href="detail.html?goods_id=${obj.goods_id}">${obj.goods_name}</a></h5>
-//						        <h6>${obj.goods_desc}</h6>
-//						        <p>价格：￥${obj.price}</p>
-//						        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
-//						      </div>
-//						    </div>
-//						  </div>`;
-//            }
-//            $("#goodsList").html(html);
-//            //获取第一张图片的宽度
-//            var w = $("#goodsList img").eq(0).width();
-//            //改变所有商品图片的宽度
-//            $("#goodsList img").css("width",w);
-//        }
-//    });
-//
-//    //搜索按钮 实现跳转
-//    $("#btn1").click(function(){
-//
-//        var search = $("#search").val();
-//
-//        console.log(search);  //253286
-//
-//        window.location.href = "detail.html?goods_id=" + search;
-//
-//    })
-</script>
 <!-- 脚本结束 -->
 </body>
 </html>

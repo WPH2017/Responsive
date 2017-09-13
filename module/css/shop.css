@@ -24,3 +24,8 @@
     width: 350px;
     height: 350px;
 }
+.page-ul{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
