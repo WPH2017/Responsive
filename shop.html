@@ -151,7 +151,7 @@
                         <div class="product-menu-title">
                             <h2>All categories <i class="fa fa-arrow-circle-down"></i></h2>
                         </div>
-                        <div class="product_vmegamenu" style="display: block;">
+                        <div class="product_vmegamenu" >
                             <ul>
                                 <li>
                                     <a href="#"><img src="img/menu-l/1.png" alt=""> Automotive &amp; Motorcycle</a></li>
@@ -289,16 +289,31 @@
 </header>
 <!-- 页眉结束 -->
 
-<!--内容部分商品展示-->
+<!--&lt;!&ndash;内容部分商品展示&ndash;&gt;-->
 <ul
         id="shop-nav">
 
 </ul>
-<section id="shop-section">
-    <ul class="goodsUl"
-        id="goodsUl"></ul>
-</section>
-<!--内容部分结束-->
+
+<div class="container">
+    <div class="row" id="goodsList">
+        <!--<div class="col-sm-6 col-md-4">-->
+            <!--<div class="thumbnail">-->
+                <!--<img src="http://www.wowdsgn.com/media/catalog/product/cache/1/small_image/720x/9df78eab33525d08d6e5fb8d27136e95/b/o/botanica-minivaser-sampak__1.jpg" alt="...">-->
+                <!--<div class="caption">-->
+                    <!--<h5>商品名称</h5>-->
+                    <!--<h6>商品详情</h6>-->
+                    <!--<p>价格：￥1980.00</p>-->
+                    <!--<p><a href="#" class="btn btn-primary" role="button">加入购物车</a></p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+
+
+
 
 <!-- 侧边栏部分 -->
 <div id="social_block">
@@ -456,41 +471,108 @@
 <script src="./common/js/jquery-1.12.3.min.js"></script>
 <script src="./common/js/bootstrap.min.js"></script>
 <script src="./common/js/common.js"></script>
+
 <script>
-    $(function () {
-//        页面导航；分类列表
-        $.get("http://h6.duchengjiu.top/shop/api_cat.php",function (data) {
-            var obj = data;
-            for(var i = 0;i < obj.data.length;i++ ){
-                $("#shop-nav").append('<li><a href="shop.html?cat_id=' +obj.data[i].cat_id+ '">' + obj.data[i].cat_name +'</a></li>');
+
+
+    //页面导航；分类列表功能
+    $.get("http://h6.duchengjiu.top/shop/api_cat.php",function(data){
+        var obj = data;
+//					console.log(obj);
+
+        for(var i=0;i<obj.data.length;i++){
+
+            $("#shop-nav").append('<li><a href="shop.html?cat_id=' +obj.data[i].cat_id+ '">' + obj.data[i].cat_name +  '</a></li>');
+        }
+
+    });
+    //通过location.search获取get传参的数据 截取？后面的内容
+    var str = location.search.substr(1);
+    //用分割方法得到 = 号两边内容
+    var catId = str.split("=")
+    //用下标找到id的值
+
+    $.ajax({
+        "url": "http://h6.duchengjiu.top/shop/api_goods.php",
+        "type": "GET",
+        "data": {
+            "cat_id": catId[1]
+        },
+        "dataType": "json",
+        "success": function(response){
+//            console.log(response);
+            var obj = response.data;
+            for(var i=0;i<obj.length;i++){
+                var data=obj[i];
+                var html=`
+                    <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="${data.goods_thumb}" alt="...">
+                <div class="caption">
+                    <a href="detail.html"><h5>商品名称:${data.goods_name}</h5></a>
+                    <h6>商品详情:${data.goods_desc}</h6>
+                    <p>价格:${data.price}</p>
+                    <p><a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
+                </div>
+            </div>
+        </div>
+                `;
+
+                $("#goodsList").append(html);
             }
-        })
-        var str = location.search.substr(1);
-        var catId = str.split("=");
-
-        $.ajax({
-            "url": "http://h6.duchengjiu.top/shop/api_goods.php",
-            "type": "GET",
-            "data": {
-                "cat_id": catId[1]
-            },
-            "dataType": "json",
-            "success": function(response){
-                var obj = response;
-                for(var i=0;i<obj.data.length;i++){
-
-                    $("#goodsUl").append('<li><img src="' +obj.data[i].goods_thumb+ '" /><p><a href="detail.html?goods_id=' + obj.data[i].goods_id + '">' +obj.data[i].goods_name+ '</a></p><p>' +obj.data[i].goods_desc+ '</p><p class="price">' +obj.data[i].price+ '</p></li>');
-                }
-            }
-
-
-        })
-
-
-
-        
-    })
-
+        }
+    });
+//    $.get("http://h6.duchengjiu.top/shop/api_cat.php",function(response){
+//
+//        if(response.code === 0){
+////		console.log(response);
+//            var html='';
+//            for(var i=0;i<response.data.length;i++){
+//                var obj = response.data[i];
+//
+//                html += `<li><a
+//href="shop.html?cat_id=${obj.cat_id}">${ obj.cat_name }</a></li>`;
+//            }
+//            $("#listNav").html(html);
+//        }
+//    });
+//    //		热门商品
+//    $.get("http://h6.duchengjiu.top/shop/api_goods.php",function(response){
+//        if(response.code === 0){
+////				console.log(response);
+//            var html='';
+//            for(var i=0;i<response.data.length;i++){
+//                var obj = response.data[i];
+//                html+=`<div class="col-sm-6 col-md-4">
+//						    <div class="thumbnail">
+//						      <img src="${obj.goods_thumb}" alt="...">
+//						      <div class="caption">
+//						        <h5><a href="detail.html?goods_id=${obj.goods_id}">${obj.goods_name}</a></h5>
+//						        <h6>${obj.goods_desc}</h6>
+//						        <p>价格：￥${obj.price}</p>
+//						        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
+//						      </div>
+//						    </div>
+//						  </div>`;
+//            }
+//            $("#goodsList").html(html);
+//            //获取第一张图片的宽度
+//            var w = $("#goodsList img").eq(0).width();
+//            //改变所有商品图片的宽度
+//            $("#goodsList img").css("width",w);
+//        }
+//    });
+//
+//    //搜索按钮 实现跳转
+//    $("#btn1").click(function(){
+//
+//        var search = $("#search").val();
+//
+//        console.log(search);  //253286
+//
+//        window.location.href = "detail.html?goods_id=" + search;
+//
+//    })
 </script>
 <!-- 脚本结束 -->
 </body>
