@@ -29,3 +29,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.thumbnail{
+	height: 550px;
+}
