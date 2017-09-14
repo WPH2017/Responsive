@@ -48,7 +48,7 @@
                         <p>
                             <span></span>
                             <button id="pay-it-rightnow">立即购买</button>
-                            <button id="add-to-cart">加入购物车</button>
+                            <button id="add-to-cart" data-goods-id="${data.goods_id}">加入购物车</button>
                         </p>
                         <p>
                             <span>分享</span>
@@ -78,11 +78,13 @@
 
                 //立即购买
                 $('#pay-it-rightnow').click(function () {
-                   console.log($(this));
+                    location.href='./cart.html';
                 });
                 //加入购物车
                 $('#add-to-cart').click(function () {
-                   console.log($(this));
+                    var goods_id=$(this).attr('data-goods-id');
+                    var number=1*input.val();
+                    addToCart(goods_id,number);
                 });
             }else{
                 alert('跳转出错');
