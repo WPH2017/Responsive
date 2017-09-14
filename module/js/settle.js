@@ -25,7 +25,7 @@ $(function () {
                             <li>收货人姓名：${json.address_name}</li>
                             <li>收货地址：${json.province} ${json.city} ${json.address}</li>
                             <li>手机：${json.mobile}</li>
-                            <i class="fa fa-minus-circle add-minus"></i>
+                            <i class="fa fa-minus add-minus"></i>
                     </ul>
                 `;
                     continue;
@@ -36,7 +36,7 @@ $(function () {
                             <li>收货人姓名：${json.address_name}</li>
                             <li>收货地址：${json.province} ${json.city} ${json.address}</li>
                             <li>手机：${json.mobile}</li>
-                            <img src="./img/minus.png" alt="" class="add-minus">
+                            <i class="fa fa-minus add-minus"></i>
                     </ul>
                 `;
             }
@@ -128,10 +128,10 @@ $('.add-plus').click(function () {
         <div class="new-every">
                 <span>收货人姓名</span><input type="text" class="add-name"><br>
                 <span>省/市</span><select name="" id="province"></select>  <select name="" id="city"></select><br>
-                <span>详细地址</span><input type="text" class="add-address"><br>
+                <span>详细地址</span><br><input type="text" class="add-address"><br>
                 <span>手机号码</span><input type="text" class="add-phonenumber"><br>
                 <button class="save-address">保存地址</button>
-                <div class="new-cancle">x</div>
+                <div class="new-cancle"><i class="fa fa-remove"></i></div>
         </div>
     `;
     $('.address').append(html);

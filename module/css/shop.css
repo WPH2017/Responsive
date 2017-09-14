@@ -6,23 +6,60 @@
 }
 
 #shop-nav{
-    overflow: hidden;
     position: relative;
-    left: 15.5%;
+    float: left;
+    left:50%;
+    transform: translateX(-50%);
+    margin: 30px 0;
+    overflow: hidden;
 }
 #shop-nav li{
     float: left;
     width: 100px;
-    height: 30px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight:bold;
     text-align: center;
-    background-color: #cccccc;
+    background-color: #eee;
+    border-radius:5px;
     margin-right: 10px;
 }
-
+#shop-nav a.now-active{
+    color: #fff;
+}
+#shop-nav a.now-active li{
+    background: #f4a137;
+}
 .thumbnail>img{
     width: 350px;
     height: 350px;
+}
+.thumbnail h5{
+    text-align: center;
+    font-size:20px;
+}
+.thumbnail h6{
+    text-align: center;
+    font-size:15px;
+    font-weight: 900;
+}
+.thumbnail p{
+    text-align: center;
+}
+.thumbnail em{
+    font-size: 14px;
+    font-weight:bold;
+}
+.thumbnail .btn-container{
+    text-align: center;
+}
+.thumbnail .btn-primary{
+    background-color: #f4a137;
+    border:none;
+}
+.thumbnail .btn-primary:hover{
+    box-shadow:1px 1px 4px 2px #eee;
 }
 .page-ul{
     position: relative;

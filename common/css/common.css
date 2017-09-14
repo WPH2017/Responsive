@@ -235,6 +235,12 @@ body {
 #social_block .cart{
     z-index: 10;
 }
+#social_block .cart.active{
+    transform: translateX(-131px);
+}
+#social_block ul li.active #cart-list{
+    opacity: 1;
+}
 #social_block #cart-list{
     position: absolute;
     width: 100%;
@@ -261,6 +267,11 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+#social_block #cart-list .more a{
+    height:40px;
+    line-height:40px;
+    background: rgba(0,0,0,.4);
 }
 #social_block #cart-list .cart-item a{
     float: left!important;
@@ -296,55 +307,14 @@ body {
 	width: 50px;
 }
 
-#social_block ul .facebook a {
+#social_block ul .wechat a {
 	background: #425f9c none repeat scroll 0 0;
 }
 
-#social_block ul .facebook a::before {
-	content: "";
-	transition: all 300ms ease-in 0s;
-}
-
-#social_block ul .twitter a {
-	background: #00aced none repeat scroll 0 0;
-}
-
-#social_block ul .twitter a::before {
-	content: "";
-}
-
-#social_block ul .rss a {
-	background: #ff9900 none repeat scroll 0 0;
-	text-transform: uppercase;
-}
-
-#social_block ul .rss a::before {
-	content: "";
-}
-
-#social_block ul .youtube a {
-	background: #e22d26 none repeat scroll 0 0;
-}
-
-#social_block ul .youtube a::before {
-	content: "";
-}
-
-#social_block ul .google-plus a {
-	background: #ed5757 none repeat scroll 0 0;
-}
-
-#social_block ul .google-plus a::before {
-	content: "";
-}
-
-#social_block ul .pinterest a {
-	background: #c21a21 none repeat scroll 0 0;
-}
-
-#social_block ul .pinterest a::before {
-	content: "";
-}
+/*#social_block ul .facebook a::before {*/
+	/*content: "";*/
+	/*transition: all 300ms ease-in 0s;*/
+/*}*/
 #social_block ul .cart a {
 	background: rgba(255, 0, 0, 0.87) none repeat scroll 0 0;
 }

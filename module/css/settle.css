@@ -21,55 +21,61 @@
     border-width: 0 1px;
 }
 .s-title{
-    margin-bottom:10px;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     padding: 3px 0px;
     color: #333;
-    height: 30px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 50px;
     border-bottom: 1px solid #999;
 }
-.s-title img.add-plus{
+.s-title i,.every-had i{
     float: right;
+    font-size: 26px;
+    line-height: 50px;
     cursor: pointer;
+    transition:all .5s;
+    color: #999;
+}
+.s-title i:hover,.every-had i:hover{
+    color: #f4a137;
 }
 .every-had{
-    height:30px;
+    height:50px;
     border-bottom: 1px solid #999;
 }
 .every-had input[type=radio]{
-    width:auto;
-    height:auto;
+    width: 20px;
+    height: 20px;
+    vertical-align: -18%;
 }
 .every-had li{
-    float: left;
+    display: inline-block;
     margin-right:20px;
-    font-size:13px;
-    line-height:30px;
-    color: #777;
-}
-.every-had img.add-minus{
-    float: right;
-    cursor: pointer;
+    font-size:15px;
+    line-height:50px;
+    color: #666;
 }
 .new-every{
     position: relative;
     float: left;
     width: 350px;
     margin-top:20px;
+    padding: 1em;
+    border: 16px solid transparent;
+    border-image: 16 repeating-linear-gradient(-45deg,#000 0,#000 1em,transparent 0 ,transparent 2em,#f4a137 0,#f4a137 3em,transparent 0,transparent 4em);
+
 }
 .new-cancle{
     position: absolute;
-    top:0;
-    right:80px;
+    top:10px;
+    right:10px;
     width: 14px;
     height: 14px;
     line-height:14px;
     text-align: center;
-    font-size:14px;
+    font-size:16px;
     cursor: pointer;
-    background-color: #eee;
 }
 .content span{
     display: inline-block;
@@ -99,7 +105,7 @@
 }
 .content input[type=text]{
     padding: 0px 5px;
-    height: 24px;
+    height: 30px;
     width: 150px;
     border: 2px #dedede solid;
     outline:none;
@@ -110,7 +116,7 @@
     border-color:#f4a137;
 }
 .content .add-address:focus{
-    width: 240px;
+    width: 280px;
     border-color:#f4a137;
 }
 .content .address select{
@@ -143,7 +149,7 @@
     margin:0 40px;
     height: 90px;
     line-height:90px;
-    font-size:12px;
+    font-size:16px;
     color: #777;
 }
 .cart-item li:first-of-type{
