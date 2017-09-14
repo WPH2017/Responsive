@@ -138,8 +138,6 @@ var getToken=function () {
     }
 };
 
-
-
 //添加到购物车业务函数
 //TODO:和购物车更新一起
 var addToCart=function (goods_id,number) {
@@ -209,6 +207,5 @@ $('.add-to-cart').click(function () {
             color:'#000'
         });
     });
-
     //样式部分
 });

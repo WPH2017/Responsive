@@ -689,16 +689,61 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 .nivo-controlNav a.active {
 	font-weight:bold;
 }
-.single-goods .goo
 
+/* 单商品组件 */
+.single-goods .img-box{
+    overflow: hidden;
+}
+.single-goods img{
+    transition: all .5s;
+}
 .single-goods img:hover{
-    animation:goods-scale 1s linear;
+    transform: scale(1.1);
 }
-@keyframes goods-scale {
-    0%{ transform: scale(2)}
-    100%{transform: scale(1)}
+.single-goods .add-cart .goods-icon{
+    float: right;
 }
-
+.single-goods .add-cart .goods-icon i{
+    position: relative;
+    margin-left:10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.single-goods .add-cart .goods-icon i:hover{
+    color: #f4a137;
+}
+.single-goods .add-cart .goods-icon i::after{
+    display: block;
+    content: '比较';
+    position: absolute;
+    width: 60px;
+    padding: 0 10px;
+    line-height: 24px;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index:999;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    transition: all .5s;
+    opacity: 0;
+}
+.single-goods .add-cart .goods-icon i:last-of-type::after{
+    content: '喜欢';
+}
+.single-goods .add-cart .goods-icon i:hover::after{
+    opacity: 1;
+}
+.single-goods .single-content a:first-of-type h5{
+    height:28px;
+    overflow: hidden;
+}
+.seller .goods-box{
+    overflow: hidden;
+}
+/* 单商品组件结束 */
 
 /* 添加购物车 */
 .add-cart{
