@@ -113,3 +113,81 @@ $("#scrollUp").click(function(){
         }
     });
 })(jQuery);
+
+//获取token全局方法
+var getToken=function () {
+    var token;
+    if(token=localStorage.getItem('token')){
+        return token;
+    }else{
+        if(confirm('您还未登录，是否跳转到登录页面')){
+            location.href='login.html#callback='+location.href;
+        }
+    }
+};
+
+//TODO:退出登录或者时间到了，删除token
+var deleteToken=function () {
+    localStorage.clear();
+};
+
+//添加到购物车业务函数
+
+var addToCart=function (goods_id,number) {
+    $.ajax({
+        url:'http://h6.duchengjiu.top/shop/api_cart.php?token='+getToken(),
+        type:'POST',
+        data:{
+            goods_id:goods_id,
+            number:number
+        },
+        success:function (response) {
+            if(response.code===0){
+                alert('已添加到购物车~');
+            }
+        }
+    })
+};
+
+
+$('.add-to-cart').click(function () {
+    //TODO:逻辑部分
+    // addToCart();
+
+    //样式部分
+});
+
+// 侧边栏购物车信息
+(function ($) {
+    var token=getToken();
+
+    if(!token) return;
+    $.ajax({
+        url:'http://h6.duchengjiu.top/shop/api_cart.php',
+        type:'GET',
+        data:{
+            token:token
+        },
+        success:function (response) {
+            console.log(response)
+            if(response.code===0){
+                var html='';
+                var dataArr=response.data;
+                for(var i=0;i<dataArr.length;i++){
+                    var data=dataArr[i];
+                    html+=`
+                        <div class="cart-item">
+                            <a href="detail.html?cat_id=${data.cat_id}&goods_id=${data.goods_id}"><img src="${data.goods_thumb}" alt=""></a>
+                            <span>${data.goods_name}</span><br>
+                            <span>${data.goods_price}</span>
+                            <span> * ${data.goods_number} 件</span><br>
+                            <span>总价：￥${data.goods_price*data.goods_number} 元</span>
+                        </div>
+                    `;
+                }
+                html+=`<a href="cart.html"><div class="run-to-cart">查看我的购物车</div></a>`;
+                $('<div id="cart-list"></div>').appendTo($('#social_block .cart')).wrapInner($(html));
+            }
+        }
+    });
+})(jQuery);

@@ -29,7 +29,9 @@ var login=function () {
                         localStorage.setItem(prop, data[prop]);
                     }
                     //如果有hash则获得hash
-                    location.href=location.hash?location.hash.substr(10):"index.html";
+                    if(confirm("登录成功！\n点击 “确认” -----> 将在2秒后跳转回原先页面\n 点击“取消” -----> 将停留在当前页面")){
+                        location.href=location.hash?location.hash.substr(10):"index.html";
+                    }
                 }
             }
         }
