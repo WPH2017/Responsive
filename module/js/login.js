@@ -9,10 +9,7 @@ $('#change-to-login').click(function () {
 });
 
 //点击登录
-var login=function () {
-    var username = $('#username').val();
-    var password = $('#password').val();
-
+var login=function (username,password) {
     $.ajax({
         url: 'http://h6.duchengjiu.top/shop/api_user.php',
         type: 'POST',
@@ -28,16 +25,22 @@ var login=function () {
                     if (data.hasOwnProperty(prop)) {
                         localStorage.setItem(prop, data[prop]);
                     }
-                    //如果有hash则获得hash
-                    if(confirm("登录成功！\n点击 “确认” -----> 将在2秒后跳转回原先页面\n 点击“取消” -----> 将停留在当前页面")){
+                }
+                //如果有hash则获得hash
+                if(confirm("登录成功！\n点击 “确认” -----> 将在2秒后跳转回原先页面\n 点击“取消” -----> 将停留在当前页面")){
+                    setTimeout(function(){
                         location.href=location.hash?location.hash.substr(10):"index.html";
-                    }
+                    },2000);
                 }
             }
         }
     });
 };
-$('#login').click(login);
+$('#login').click(function () {
+    var username = $('#username').val();
+    var password = $('#password').val();
+    login(username,password);
+});
 
 $('#register').click(function () {
     var username=$('#reg-username').val();
@@ -58,8 +61,8 @@ $('#register').click(function () {
         },
         success:function (response) {
             if(response.code===0){
-                alert("注册成功，点击后开始自动登录~")
-                login();
+                alert("注册成功，点击后开始自动登录~");
+                login(username,password);
             }
         }
     });

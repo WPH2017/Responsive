@@ -114,10 +114,22 @@ $("#scrollUp").click(function(){
     });
 })(jQuery);
 
+//TODO:退出登录或者时间到了，删除token
+var deleteToken=function () {
+    localStorage.clear();
+};
+
 //获取token全局方法
 var getToken=function () {
     var token;
     if(token=localStorage.getItem('token')){
+        $('.mainmenu-area .mainmenu li').eq(4).html('<button><a href="./order.html">'+localStorage.getItem('username')+' 的账户</a></button> <button class="logout">注销</button>');
+        $('button.logout').click(function () {
+            if(confirm('确定要注销当前账户吗？')) {
+                deleteToken();
+                $('.mainmenu-area .mainmenu li').eq(4).html(`<a href="login.html">登录</a>`);
+            }
+        });
         return token;
     }else{
         if(confirm('您还未登录，是否跳转到登录页面')){
@@ -126,13 +138,10 @@ var getToken=function () {
     }
 };
 
-//TODO:退出登录或者时间到了，删除token
-var deleteToken=function () {
-    localStorage.clear();
-};
+
 
 //添加到购物车业务函数
-
+//TODO:和购物车更新一起
 var addToCart=function (goods_id,number) {
     $.ajax({
         url:'http://h6.duchengjiu.top/shop/api_cart.php?token='+getToken(),
@@ -149,27 +158,15 @@ var addToCart=function (goods_id,number) {
     })
 };
 
-
-$('.add-to-cart').click(function () {
-    //TODO:逻辑部分
-    // addToCart();
-
-    //样式部分
-});
-
-// 侧边栏购物车信息
-(function ($) {
-    var token=getToken();
-
-    if(!token) return;
+// 侧边栏购物车信息更新
+var updateCart=function (callback) {
     $.ajax({
         url:'http://h6.duchengjiu.top/shop/api_cart.php',
         type:'GET',
         data:{
-            token:token
+            token:localStorage.getItem('token')
         },
         success:function (response) {
-            console.log(response)
             if(response.code===0){
                 var html='';
                 var dataArr=response.data;
@@ -186,8 +183,32 @@ $('.add-to-cart').click(function () {
                     `;
                 }
                 html+=`<a href="cart.html"><div class="run-to-cart">查看我的购物车</div></a>`;
-                $('<div id="cart-list"></div>').appendTo($('#social_block .cart')).wrapInner($(html));
+                callback(html);
             }
         }
     });
+};
+(function ($) {
+    if(!localStorage.getItem('token')) return;
+
+    var token=getToken();
+
+    //初始化
+    updateCart(function (html) {
+        $('<div id="cart-list"></div>').appendTo($('#social_block .cart')).wrapInner($(html));
+    });
 })(jQuery);
+
+//绑定按钮更新操作
+$('.add-to-cart').click(function () {
+    //TODO:逻辑部分
+    $.ajax()
+    updateCart(function (html) {
+        $('#cart-list').html(html);
+        $('#social_block .cart').css({
+            color:'#000'
+        });
+    });
+
+    //样式部分
+});
