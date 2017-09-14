@@ -171,7 +171,7 @@ var addToCart=function (goods_id,number=1) {
                 });
             }
         }
-    })
+    });
 };
 
 // 侧边栏购物车信息更新
