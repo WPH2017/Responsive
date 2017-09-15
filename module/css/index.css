@@ -708,61 +708,6 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 	font-weight:bold;
 }
 
-/* 单商品组件 */
-.single-goods .img-box{
-    overflow: hidden;
-}
-.single-goods img{
-    transition: all .5s;
-}
-.single-goods img:hover{
-    transform: scale(1.1);
-}
-.single-goods .add-cart .goods-icon{
-    float: right;
-}
-.single-goods .add-cart .goods-icon i{
-    position: relative;
-    margin-left:10px;
-    transition: all .5s;
-    cursor: pointer;
-}
-.single-goods .add-cart .goods-icon i:hover{
-    color: #f4a137;
-}
-.single-goods .add-cart .goods-icon i::after{
-    display: block;
-    content: '比较';
-    position: absolute;
-    width: 60px;
-    padding: 0 10px;
-    line-height: 24px;
-    top: -30px;
-    left: 50%;
-    transform: translate(-50%);
-    z-index:999;
-    text-align: center;
-    color: #fff;
-    background-color: #000;
-    border-radius: 5px;
-    transition: all .5s;
-    opacity: 0;
-}
-.single-goods .add-cart .goods-icon i:last-of-type::after{
-    content: '喜欢';
-}
-.single-goods .add-cart .goods-icon i:hover::after{
-    opacity: 1;
-}
-.single-goods .single-content a:first-of-type h5{
-    height:28px;
-    overflow: hidden;
-}
-.seller .goods-box{
-    overflow: hidden;
-}
-/* 单商品组件结束 */
-
 /* 添加购物车 */
 .add-cart{
     position: relative;
@@ -832,10 +777,13 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 .big-goods{
     margin-top:30px;
 }
-.big-goods .container{
+.big-goods .container>.row{
     border-top:3px solid #F4A137;
 }
 
+.big-goods .row{
+    margin: 0;
+}
 .big-goods .row>div{
     margin: 0;
     padding: 0;
@@ -844,6 +792,15 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 .big-goods .row>div>div{
     margin: 0;
     padding: 0;
+}
+.big-goods .super-single-goods .single-content{
+    padding-bottom: 109px;
+}
+.big-goods .small-goods .single-content{
+    padding-bottom: 9px;
+}
+.big-goods .small-goods .single-goods h5,.big-goods .small-goods .single-goods p{
+    margin: 0;
 }
 .big-goods .tab-title-change h2{
     margin: 0;
@@ -917,6 +874,7 @@ aside .single-goods::after{
 aside .single-goods .img-box{
     float: left;
     width: 40%;
+    padding-bottom: 40%;
 }
 aside .single-goods .single-content{
     float:left;
@@ -926,8 +884,14 @@ aside .single-goods .single-content{
 }
 aside .spe-seller .single-goods .img-box{
     width: 100%;
+    padding-bottom: 100%;
 }
-
+aside .spe-seller .single-goods .single-content{
+    width: 100%;
+}
+.goods-list{
+    margin-top:30px;
+}
 .goods-list>div .single-goods{
     position: relative;
     margin: 0;

@@ -21,7 +21,7 @@ function importData(obj,flag,cat_id,size,className='',callback,callbackArgs) {
                         singleHtml=`
                             <div class="single-goods ${className}">
                                 <div class="img-box">
-                                    <img src="${data.goods_thumb}" alt="">
+                                    <a href="./detail.html?cat_id=${data.cat_id}&goods_id=${data.goods_id}"><img src="${data.goods_thumb}" alt=""></a>
                                 </div>
                                 <div class="single-content">
                                     <a href="#">
@@ -46,7 +46,7 @@ function importData(obj,flag,cat_id,size,className='',callback,callbackArgs) {
                         singleHtml=`
                             <div class="single-goods ${className}">
                                 <div class="img-box">
-                                    <img src="${data.goods_thumb}" alt="">
+                                     <a href="./detail.html?cat_id=${data.cat_id}&goods_id=${data.goods_id}"><img src="${data.goods_thumb}" alt=""></a>
                                 </div>
                                 <div class="single-content">
                                     <a href="#">
@@ -86,7 +86,7 @@ function importData(obj,flag,cat_id,size,className='',callback,callbackArgs) {
 
 importData($('.goods-list .best-seller .goods-box'),false,55,5);
 
-importData($('.goods-list .spe-seller .goods-box'),false,69,1);
+importData($('.goods-list .spe-seller .goods-box'),true,69,1);
 
 importData($('.goods-list .client-seller .goods-box'),false,62,1);
 
