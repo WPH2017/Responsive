@@ -93,3 +93,9 @@ importData($('.goods-list .client-seller .goods-box'),false,62,1);
 importData($('.goods-list .super-seller .goods-box'),true,77,4,'col-lg-3 col-sm-6 col-xs-12');
 
 importData($('.goods-list .new-seller .goods-box'),true,82,8,'col-lg-3 col-sm-6 col-xs-12',bindAddToCart,$('button.add-to-cart'));
+
+
+
+
+//轮播图
+
