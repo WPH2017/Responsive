@@ -370,6 +370,24 @@ NOTE: This is product-tab style file. All product-tab related style included in 
     transition: all .4s;
 }
 
+.owl-stage-new{
+    width:auto!important;
+    overflow: hidden;
+    transform:none!important;
+}
+.owl-stage-new .single-goods{
+    background: #fff;
+}
+.owl-stage-new img{
+    width: 100px;
+}
+.owl-stage-new .img-box{
+    float: left;
+}
+.owl-stage-new .single-content{
+    float: right;
+}
+
 .dotted-style-2 .owl-carousel .owl-controls .owl-nav div:hover {
     color: #fff;
     background: #FEBE74;

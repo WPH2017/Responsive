@@ -1,3 +1,5 @@
+
+//头部导航
 (function ($) {
     "use strict";
     /*----------------------------
@@ -114,10 +116,19 @@ $("#scrollUp").click(function(){
     });
 })(jQuery);
 
-//TODO:退出登录或者时间到了，删除token
 var deleteToken=function () {
     localStorage.clear();
 };
+//过期24小时delete
+var checkTime=function (limit=24*3600*1000) {
+    var oldTime=localStorage.getItem('timestamp');
+    if(oldTime){
+        if(Date.parse(new Date())-oldTime>limit){
+            deleteToken();
+        }
+    }
+};
+
 
 //获取token全局方法
 var getToken=function () {
@@ -139,8 +150,7 @@ var getToken=function () {
 };
 
 //添加到购物车业务函数
-//TODO:和购物车更新一起
-var addToCart=function (goods_id,number) {
+var addToCart=function (goods_id,number=1) {
     $.ajax({
         url:'http://h6.duchengjiu.top/shop/api_cart.php?token='+getToken(),
         type:'POST',
@@ -151,9 +161,17 @@ var addToCart=function (goods_id,number) {
         success:function (response) {
             if(response.code===0){
                 alert('已添加到购物车~');
+                updateCart(function (html) {
+                    $('#cart-list').html(html);
+                    //样式部分
+                    $('#cart-list').parent().addClass('active');
+                    setTimeout(function () {
+                        $('#cart-list').parent().removeClass('active');
+                    },2000);
+                });
             }
         }
-    })
+    });
 };
 
 // 侧边栏购物车信息更新
@@ -170,6 +188,14 @@ var updateCart=function (callback) {
                 var dataArr=response.data;
                 for(var i=0;i<dataArr.length;i++){
                     var data=dataArr[i];
+                    if(i>4){
+                        html+=`
+                           <div class="more">
+                                <a href="./cart.html"> · · · · 更多 · · · · </a>
+                            </div> 
+                        `;
+                        break;
+                    }
                     html+=`
                         <div class="cart-item">
                             <a href="detail.html?cat_id=${data.cat_id}&goods_id=${data.goods_id}"><img src="${data.goods_thumb}" alt=""></a>
@@ -179,9 +205,10 @@ var updateCart=function (callback) {
                             <span>总价：￥${data.goods_price*data.goods_number} 元</span>
                         </div>
                     `;
+
                 }
                 html+=`<a href="cart.html"><div class="run-to-cart">查看我的购物车</div></a>`;
-                callback(html);
+                if(callback) callback(html);
             }
         }
     });
@@ -197,15 +224,10 @@ var updateCart=function (callback) {
     });
 })(jQuery);
 
-//绑定按钮更新操作
-$('.add-to-cart').click(function () {
-    //TODO:逻辑部分
-    $.ajax()
-    updateCart(function (html) {
-        $('#cart-list').html(html);
-        $('#social_block .cart').css({
-            color:'#000'
-        });
+//绑定添加到按钮更新操作
+var bindAddToCart=function (obj) {
+    obj.click(function () {
+        var goods_id=$(this).attr('data-goods-id');
+        addToCart(goods_id);
     });
-    //样式部分
-});
+};

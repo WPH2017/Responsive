@@ -1,22 +1,32 @@
+.cart{
+    margin-top:60px;
+}
+
 .step{
     position: relative;
-    width: 400px;
-    margin:20px auto;
+    width:420px;
+    left:50%;
+    color: #666;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
     overflow: hidden;
 }
 .step li{
     float: left;
     padding:0 30px;
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 30px;
     text-align: center;
+    border-radius:5px;
+    cursor: pointer;
 }
 .step li:first-of-type{
-    color: #f4a137;
-    background-color: #eee;
+    color: #fff;
+    background-color: #f4a137;
 }
-.step li:nth-of-type(2){
-    border:1px solid #5c5c5c;
-    border-width: 0 1px;
+.step li:nth-of-type(2),.step li:nth-of-type(3){
+    background-color: #eee;
+    margin-left:5px;
 }
 .cart-table{
     width: 100%;
@@ -35,6 +45,7 @@
     font-weight:normal;
     font-size:15px;
     height: 52px;
+    line-height: 52px;
     border-bottom: 2px solid #ccc;
     text-align: center;
 }
@@ -88,6 +99,7 @@
 }
 .summary{
     text-align: center;
+    margin-bottom:60px;
 }
 .summary p{
     margin:10px 0 -10px 0;
@@ -98,21 +110,33 @@
     color: #f4a137;
 }
 .summary .submit{
-    width: 168px;
+    width: 150px;
     height: 30px;
     color: #fff;
+    font-size:16px;
     background-color: #f4a137;
     outline:0;
     border: 0;
+    border-radius:6px;
     cursor: pointer;
+    transition: all .5s;
+}
+.summary .submit:hover{
+    box-shadow: 1px 1px 1px 1px #ccc;
 }
 .summary .continue{
     display: block;
     margin-top:16px;
+    color: #666;
+}
+.summary .continue:hover{
+    color: #f4a137;
 }
 .summary .continue::before{
-    content: '—————';
+    content: '————> ';
+    color: #f4a137;
 }
 .summary .continue::after{
-    content: '—————';
+    content: ' <————';
+    color: #f4a137;
 }

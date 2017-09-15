@@ -2,7 +2,7 @@
 $(".product-menu-title").click();
 
 //导入各类数据
-function importData(obj,flag,cat_id,size,className='') {
+function importData(obj,flag,cat_id,size,className='',callback,callbackArgs) {
     //传入被导入的对象，flag表示是否有小标签，cat_id是类别，size表示导入数据的数量
     $.ajax({
         url:'http://h6.duchengjiu.top/shop/api_goods.php',
@@ -77,6 +77,9 @@ function importData(obj,flag,cat_id,size,className='') {
                 obj.append(html);
                 // obj.html('').append(html);
             }
+
+        //    如果有回调及参数，则执行回调
+            if(callback&&callbackArgs)callback(callbackArgs);
         }
     });
 }
@@ -89,4 +92,4 @@ importData($('.goods-list .client-seller .goods-box'),false,62,1);
 
 importData($('.goods-list .super-seller .goods-box'),true,77,4,'col-lg-3 col-sm-6 col-xs-12');
 
-importData($('.goods-list .new-seller .goods-box'),true,82,8,'col-lg-3 col-sm-6 col-xs-12');
+importData($('.goods-list .new-seller .goods-box'),true,82,8,'col-lg-3 col-sm-6 col-xs-12',bindAddToCart,$('button.add-to-cart'));

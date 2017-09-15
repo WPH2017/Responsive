@@ -26,6 +26,8 @@ var login=function (username,password) {
                         localStorage.setItem(prop, data[prop]);
                     }
                 }
+                // 记录时间戳
+                localStorage.setItem('timestamp',Date.parse(new Date()));
                 //如果有hash则获得hash
                 if(confirm("登录成功！\n点击 “确认” -----> 将在2秒后跳转回原先页面\n 点击“取消” -----> 将停留在当前页面")){
                     setTimeout(function(){
