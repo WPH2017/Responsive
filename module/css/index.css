@@ -783,6 +783,7 @@ NOTE: This is product-tab style file. All product-tab related style included in 
 
 .big-goods .row{
     margin: 0;
+    padding: 0;
 }
 .big-goods .row>div{
     margin: 0;
