@@ -35,6 +35,19 @@ body {
 a:focus {
 	outline: 0px solid
 }
+.header-compire>a>img{
+	position: absolute;
+    top: -50px;
+    left: 25px;
+    width: 200px;
+    height: 90px;
+}
+.header-compire>a>p{
+	position: absolute;
+    top: 42px;
+    left: 49px;
+    height: 20px;
+}
 
 img {
 	max-width: 100%;

@@ -1,5 +1,4 @@
 $(function() {
-	
 	var LLAnimation	= (function() {
 		
 		var $wrapper		= $('#ll-wrapper'),
@@ -10,8 +9,7 @@ $(function() {
 				initEvents();
 			
 			},
-			initEvents		= function() {
-				
+			initEvents= function() {
 				$('#ll-button').on( 'click', function( event ) {
 					
 					$wrapper.removeClass('active');

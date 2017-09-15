@@ -1,0 +1,30 @@
+.row.content{
+    height: 250px;
+    /* background: #3c3c3c; */
+    font-size: 18px;
+    color: #ccc;
+    position: relative;
+    margin: 0 auto;
+}
+.cart{
+    position: relative;
+    margin: 0 auto;
+    clear: both;
+    left: 1%;
+    top: -6%;
+}
+.h-tr>th{
+    width: 270px;
+}
+#order-row{
+    position: relative;
+    top: -155px;
+}
+.item>td>img{
+    margin-bottom: 100px;
+}
+.item>td>a{
+    position: relative;
+    left: -226px;
+    top: 35px;
+}

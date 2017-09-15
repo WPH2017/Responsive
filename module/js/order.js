@@ -1,39 +1,3 @@
-// $(function() {
-//     var token = getToken();
-//     if (!token) return;
-//     var html = "";
-//     $.ajax({
-//         "url": "http://h6.duchengjiu.top/shop/api_useraddress.php",
-//         "type": "GET",
-//         "data": {
-//             "token": token
-//         },
-//         "success": function (response) {
-//             var html = "";
-//             var data = response.data;
-//             for (var i = 0; i < data.length; i++) {
-//                 var json = data[i];
-//                 if (i == 0) {
-//                     html += `
-//                         <ul class="every-had" data-id="${json.address_id}">
-//                                 <li>收货人姓名：${json.address_name}</li>
-//                                 <li>收货地址：${json.province} ${json.city} ${json.address}</li>
-//                                 <li>手机：${json.mobile}</li>                           
-//                         </ul>
-//                     `;
-
-//                 }
-//             }
-//             $('.address').append(html);
-
-
-//         }
-
-//     })
-
-// // 查看订单列表
-
-// });
 
 $(function() {
     //地址id号
@@ -65,5 +29,45 @@ $(function() {
             }
         })
     }
-});
+
+    var token =getToken();
+    if(!token) return ;
+        //拉取数据并绑定相关事件
+        $.ajax({
+            url:'http://h6.duchengjiu.top/shop/api_cart.php',
+            type:'GET',
+            data:{
+                token:token
+            },
+            success:function (response) {
+                if(response.code===0){
+                    for(var i=0;i<response.data.length;i++){
+                        var data=response.data[i];
+                        var html=`<tr class="item" data-id="${data.goods_id}">
+                                <td>
+                                   
+                                    <img src="${data.goods_thumb}" alt="">
+                                </td>
+                                <td><a href="">${data.goods_name}</a>
+                                </td>
+                                <td>
+                                    <button class="numless"> </button>
+                                    <span class="goodsnum">${data.goods_number}</span>
+                                    <button class="nummore"></button>
+                                </td>
+                                <td class="goodsprice">
+                                    ${data.goods_price}
+                                </td>
+                                <td class="goodsamount">
+                                     ${data.goods_price*data.goods_number}
+                                 </td>
+            
+                            </tr>`;
     
+                        $('.cart-table').html($('.cart-table').html()+html);
+                    }
+}}
+})
+});
+
+
